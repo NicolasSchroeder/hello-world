@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    kubernetes {
+      cloud 'kubernetes'
+      namespace 'kubernetes'
+    }
+  }
   stages {
     stage('hello world') {
       steps {
