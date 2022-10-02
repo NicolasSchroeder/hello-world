@@ -2,7 +2,7 @@ pipeline {
   agent {
     kubernetes {
       cloud 'kubernetes'
-      namespace 'kubernetes'
+      namespace 'jenkins'
     }
   }
   stages {
